@@ -24,7 +24,7 @@ public class CardGame {
 
 		while(input.hasNext()) {
 			String[] fields  = input.nextLine().split(",");
-			//	public Card(String cardSuit, String cardName, int cardValue, String cardPicture) {
+				public Card(String cardSuit, String cardName, int cardValue, String cardPicture) {
 			Card newCard = new Card(fields[0], fields[1].trim(),
 					Integer.parseInt(fields[2].trim()), fields[3]);
 			deckOfCards.add(newCard);	
