@@ -24,7 +24,7 @@ public class CardGame {
 
 		while(input.hasNext()) {
 			String[] fields  = input.nextLine().split(",");
-				public Card(String cardSuit, String cardName, int cardValue, String cardPicture) {
+			//	public Card(String cardSuit, String cardName, int cardValue, String cardPicture) {
 			Card newCard = new Card(fields[0], fields[1].trim(),
 					Integer.parseInt(fields[2].trim()), fields[3]);
 			deckOfCards.add(newCard);	
@@ -80,4 +80,21 @@ public class CardGame {
 		}//end outer for
 		return false;
 	}
+
+	//player hand
+	public static void showPlayerHand(){
+		System.out.println("\n Player's Cards:");
+		for (int i = 0; i <playerCards.size();i++){
+			 System.out.println((i + 1) + ". " + playerCards.get(i));
+		}
+
+	}
+
+
+
+
+
+
+
+
 }//end class
