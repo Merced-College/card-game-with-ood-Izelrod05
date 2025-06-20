@@ -1,5 +1,5 @@
-package cardGame;
-/*this is the card class which is in charg of all the getter and setter method 
+//package cardGame;
+/*this is the card class which is in charge of all the getter and setter method 
   as well as the printing method and comparing method
  */
 
