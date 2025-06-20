@@ -49,6 +49,8 @@ public class CardGame {
 
 		System.out.println("pairs is " + checkFor2Kind());
 
+		gameMenu();
+
 	}//end main
 
 	public static void shuffle() {
@@ -100,7 +102,7 @@ public class CardGame {
 		/*creating simple menu for user to have some
 		 * choices when playing the game
 		 */
-		while (playing){
+	 while (playing){
 			System.out.println("\n Choose an option:");
 			System.out.println("1. Draw a card");
 			System.out.println("2. Discard a card");
@@ -110,8 +112,9 @@ public class CardGame {
 
 			//ask for choice via number ex 1 for draw 5 for exit
 			int choice = scn.nextInt();
-			switch(choice){
-
+		// works like else if statments but with less writting	
+		switch(choice){
+			
 			case 1:
 				if(!deckOfCards.isEmpty()){
 					Card drawn = deckOfCards.remove(0);
@@ -133,23 +136,21 @@ public class CardGame {
 				System.out.println("Invalid Input");
 			 }
 			 break;
-
-
+		 case 3:
+			showPlayerHand();
+			break;
+		 case 4:
+			System.out.println("Pair found? " + checkFor2Kind());
+             break;
+		 case 5:
+			playing =false;
+			break;
+		
+		 default:
+			System.out.println("Invalid Input");	 
 
 			}
-
-
-
-
 		}
-
+		System.out.println("Thanks for playing");
 	}
-
-
-
-
-
-
-
-
 }//end class
