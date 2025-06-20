@@ -1,2 +1,2 @@
 [![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=19806764)
-# cardsWithOOD
+This Java program loads a deck of cards from a file, shuffles it, and deals an initial hand to the player. A simple interactive menu lets the player draw new cards, discard cards, view their hand, and check for pairs. The menu was added to enhance gameplay and make the program more interactive. Card data is loaded from cards.txt, which includes each card’s suit, name, value, and image filename.
