@@ -114,7 +114,7 @@ public class CardGame {
 			int choice = scn.nextInt();
 		// works like else if statments but with less writting	
 		switch(choice){
-
+			//adds card 
 			case 1:
 				if(!deckOfCards.isEmpty()){
 					Card drawn = deckOfCards.remove(0);
@@ -136,17 +136,18 @@ public class CardGame {
 				System.out.println("Invalid Input");
 			 }
 			 break;
+			 //checks for pair
 		 case 3:
 		     System.out.println("Pair found? " + checkFor2Kind());
              break;
-
+		//shows hand
 		 case 4:
 			showPlayerHand();
 			break;
 		 case 5:
 			playing =false;
 			break;
-		
+		// checks fun the number input ex if 6 was inputed it would return this message
 		 default:
 			System.out.println("Invalid Input");	 
 
