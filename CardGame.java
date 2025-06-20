@@ -114,7 +114,7 @@ public class CardGame {
 			int choice = scn.nextInt();
 		// works like else if statments but with less writting	
 		switch(choice){
-			
+
 			case 1:
 				if(!deckOfCards.isEmpty()){
 					Card drawn = deckOfCards.remove(0);
@@ -137,11 +137,12 @@ public class CardGame {
 			 }
 			 break;
 		 case 3:
+		     System.out.println("Pair found? " + checkFor2Kind());
+             break;
+
+		 case 4:
 			showPlayerHand();
 			break;
-		 case 4:
-			System.out.println("Pair found? " + checkFor2Kind());
-             break;
 		 case 5:
 			playing =false;
 			break;
